@@ -1,10 +1,9 @@
+name: Deploy website on push
+
 on:
   push:
     branches:
       - main
-
-name: Deploy website on push
-
 
 jobs:
   web-deploy:
@@ -25,11 +24,12 @@ jobs:
     #     npm run generate
 
     - name: 📁 Sync Files
-      uses: Samkirkland/FTP-Deploy-Action@v4.3.4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{secrets.GIT_CPANEL_SERVER}}
-        username: ${{secrets.GIT_CPANEL_USER}}
-        password: ${{secrets.GIT_CPANEL_PWD}}
-        protocol: ${{secrets.GIT_CPANEL_PROTOCOL}}
+        server: ${{ secrets.GIT_CPANEL_SERVER }}
+        username: ${{ secrets.GIT_CPANEL_USER }}
+        password: ${{ secrets.GIT_CPANEL_PWD }}
+        protocol: ${{ secrets.GIT_CPANEL_PROTOCOL }}
+        port: 21
         local-dir: ./
         server-dir: /
