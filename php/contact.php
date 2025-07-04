@@ -11,6 +11,7 @@ use PHPMailer\PHPMailer\Exception;
     // Extract data from the JSON
     $name = $_POST['fname'];
     $email = $_POST['email'];
+    $phone = $_POST['phone'];
     $messageContent = $_POST['message'];
     $messageContent = nl2br($messageContent);
 
@@ -28,7 +29,7 @@ use PHPMailer\PHPMailer\Exception;
     //Set gmail username
     $mail->Username = "contact@anchoredchaplainsllc.com";
     //Set gmail password
-    $mail->Password = "Techvista2024";
+    $mail->Password = "$@Pf,hnl8gqf";
     //Email subject
     $mail->Subject = "Contact Us Entries";
     $mail->setFrom($email);
@@ -77,6 +78,7 @@ use PHPMailer\PHPMailer\Exception;
                     <div class="details">
                         <p><strong>Full Name:</strong> ' . $name . '</p>
                         <p><strong>Email Address:</strong> ' . $email . '</p>
+                        <p><strong>Phone Number:</strong> ' . $phone . '</p>
                     </div>
                     <div class="message">
                         <p><strong>Message:</strong></p>

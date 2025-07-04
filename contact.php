@@ -89,7 +89,7 @@
                                 <div class="col-md-12">
                                     <span class="text-dark">Your Name*</span>
                                     <div class="form-grp">
-                                        <input type="text" name="name" id="name" value="">
+                                        <input type="text" name="fname" id="name" value="">
                                     </div>
                                 </div>
                                 <div class="row">
