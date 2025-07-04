@@ -35,7 +35,7 @@
     <div class="container container-1 mb-5">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
-                <img src="assets/images/new/img2.jpg" alt="Blessed">
+                <img src="assets/images/new/img1.jpg" alt="Blessed">
             </div>
         </div>
     </div>

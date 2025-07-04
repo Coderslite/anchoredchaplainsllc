@@ -45,9 +45,9 @@ Author: wp-organic
 
         <!-- Favicons
         ================================================== -->
-        <link rel="shortcut icon" href="assets/images/favicon.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon.png">
+        <link rel="shortcut icon" href="assets/images/logo/preloader.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/logo/preloader.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/logo/preloader.png">
 
         <!-- Custom Font ( Fontawesome + Falticon + Google Font )
         ======================================================-->
