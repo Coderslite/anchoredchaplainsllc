@@ -84,7 +84,7 @@
                 <div class="col-lg-6">
                     <h5 class="ds-5 fw-medium mb-4">Have Any Question?</h5>
                     <div class="contact__form-wrap">
-                        <form action="javascript:">
+                        <form id="submitForm">
                             <div class="row">
                                 <div class="col-md-12">
                                     <span class="text-dark">Your Name*</span>
@@ -138,3 +138,56 @@
 
 </main>
 <?php include "includes/footer.php";?>
+
+<script>
+$(document).ready(function(){
+    $("#submitForm").submit(function(e) {
+    e.preventDefault();    
+    var formData = new FormData(this);
+    $.ajax({
+        url: 'php/contact.php',
+		type: 'POST',
+        contentType: false,
+        cache: false,
+        processData: false,
+        data: formData,
+        dataType: 'json',
+        beforeSend:function(){
+            Swal.fire({
+            html:'<div style="font-size: 15px; width:4rem; height:4rem;" class="spinner-border"></div>',
+            showConfirmButton:false
+            });
+        
+        },
+        success: function (data) {
+            if(data.trim() == 'success'){
+                
+                Swal.fire({
+                    icon:'success',					
+                    html:'<div class=""> Message Successful</div>',
+                    showConfirmButton:true,
+                    allowOutsideClick:false
+                }).then((result) => {
+                    location.href="contact.php";	// location.href="";
+
+                })
+            }
+            else{
+                Swal.fire({
+                    icon:'error',
+                    html:data,
+                    allowOutsideClick:false
+                });
+            }		
+        },
+        error:function(){
+            Swal.fire({
+                icon:'error',
+                html:'<div>Something went wrong</div>',
+                allowOutsideClick:false
+            });
+        },
+    });
+});
+});
+</script>

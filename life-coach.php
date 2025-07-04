@@ -89,60 +89,22 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <?php 
+            include "admin/php/db_config.php";
+            $query=mysqli_query($con, "SELECT * FROM books");
+            while($row = mysqli_fetch_assoc($query)){
+                ?>
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title fw-medium">Discovering Your Purpose</h5>
-                        <p class="card-text text-400">A course to help you uncover God’s unique calling for your life through reflective exercises and biblical principles.</p>
-                        <a href="assets/downloads/purpose-guide.pdf" class="btn btn-outline-primary rounded-5" download>Download Guide</a>
+                        <h5 class="card-title fw-medium"><?php echo $row['title'] ?></h5>
+                        <a href="uploads/<?php echo $row['name']; ?>" class="btn btn-outline-primary rounded-5" download>Download </a>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title fw-medium">Overcoming Limiting Beliefs</h5>
-                        <p class="card-text text-400">Learn practical strategies to break free from self-doubt and embrace confidence rooted in faith.</p>
-                        <a href="assets/downloads/beliefs-workbook.pdf" class="btn btn-outline-primary rounded-5" download>Download Workbook</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title fw-medium">Building Spiritual Resilience</h5>
-                        <p class="card-text text-400">Develop tools to strengthen your faith and emotional resilience in challenging seasons.</p>
-                        <a href="assets/downloads/resilience-plan.pdf" class="btn btn-outline-primary rounded-5" download>Download Plan</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title fw-medium">Navigating Life Transitions</h5>
-                        <p class="card-text text-400">Gain clarity and confidence during career changes, relocations, or other major life shifts.</p>
-                        <a href="assets/downloads/transitions-guide.pdf" class="btn btn-outline-primary rounded-5" download>Download Guide</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title fw-medium">Deepening Your Faith</h5>
-                        <p class="card-text text-400">A journey to grow closer to God through prayer, scripture, and practical spiritual disciplines.</p>
-                        <a href="assets/downloads/faith-journal.pdf" class="btn btn-outline-primary rounded-5" download>Download Journal</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title fw-medium">Leadership in Ministry</h5>
-                        <p class="card-text text-400">Equipping ministry leaders with tools for effective, Christ-centered leadership.</p>
-                        <a href="assets/downloads/leadership-toolkit.pdf" class="btn btn-outline-primary rounded-5" download>Download Toolkit</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </section>
