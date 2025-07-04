@@ -1,0 +1,35 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Deploy website on push
+
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚕 Get latest code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js 18.x
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+    
+    # - name: 🛠️ Install dependencies and build
+    #   run: |
+    #     npm install
+    #     npm run generate
+
+    - name: 📁 Sync Files
+      uses: Samkirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{secrets.GIT_CPANEL_SERVER}}
+        username: ${{secrets.GIT_CPANEL_USER}}
+        password: ${{secrets.GIT_CPANEL_PWD}}
+        protocol: ${{secrets.GIT_CPANEL_PROTOCOL}}
+        local-dir: ./
+        server-dir: /
