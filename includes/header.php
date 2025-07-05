@@ -98,11 +98,11 @@ Author: wp-organic
                             <ul class="tc-header__top-right list-wrap fs-7 fw-normal">
                                 <li>
                                     <i class="size-16" data-feather="phone"></i>
-                                    <a href="tel:2295550109"><span class="text-dark">(229) 555-0109</span></a>
+                                    <a href="tel:2295550109"><span class="text-dark">8082058154</span></a>
                                 </li>
                                 <li>
                                     <i class="size-16" data-feather="map-pin"></i>
-                                    <span class="text-dark">2118 Thornridge Cir. Syracuse, Connecticut 35624</span>
+                                    <span class="text-dark">P.O. Box 283 Midway Ga 31320</span>
                                 </li>
                             </ul>
                         </div>

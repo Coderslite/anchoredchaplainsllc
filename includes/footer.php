@@ -41,7 +41,7 @@
                                                 <i class="size-16" data-feather="phone-call"></i>
                                             </div>
                                             <div class="content">
-                                                <a href="tel:2295550109" class="text-white fs-6">(229) 555-0109</a>
+                                                <a href="tel:2295550109" class="text-white fs-6">8082058154</a>
                                             </div>
                                         </li>
                                         <li>
@@ -49,12 +49,11 @@
                                                 <i class="size-16" data-feather="map-pin"></i>
                                             </div>
                                             <div class="content">
-                                                <span class="fs-6">2118 Thornridge Cir. Syracuse, Connecticut
-                                                    35624</span>
+                                                <span class="fs-6">P.O. Box 283 Midway Ga 31320</span>
                                             </div>
                                         </li>
                                     </ul>
-                                    <p class="fs-7 mt-3">support@anchoredchaplainllc.com</p>
+                                    <p class="fs-7 mt-3">contact@anchoredchaplainllc.com</p>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +67,7 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="copyright-text">
-                                    <p>© 2024 <a class="text-primary" href="index.php">Anchored Chaplains LLC Church</a> | All Right Reserved
+                                    <p>© 2025 <a class="text-primary" href="index.php">Anchored Chaplains LLC Church</a> | All Right Reserved
                                     </p>
                                 </div>
                             </div>
@@ -107,6 +106,9 @@
         <script src="assets/library/gsap-3.10.4/gsap.js"></script>
         <script src="assets/library/gsap-3.10.4/ScrollTrigger.js"></script>
         <script src="assets/library/gsap-3.10.4/SplitText.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.js"></script>
 
         <!-- Anchored Chaplains LLC - Template Custom Script
         ===================================== -->

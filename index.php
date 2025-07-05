@@ -38,24 +38,6 @@
                             <h2 class="ds-3 fw-normal" data-aos="fade-up">About Us</h2>
                             <p class="fs-6" data-aos="fade-up">At Anchored Chaplains LLC, we believe that transformation begins from within—and life coaching is one of the powerful tools God uses to help individuals rediscover their purpose, rebuild confidence, and walk boldly in their calling.
                             </p>
-                            <div class="row mt-5">
-                                <div class="col-lg-6">
-                                    <img src="assets/images/home1/img-1.png" alt="Anchored Chaplain LLC" data-aos="flip-left">
-                                    <h5 class="mt-4 fw-medium">Study Bible</h5>
-                                    <p data-aos="fade-up">
-                                        Our church is welcoming and sociable, hosting plenty of events. Committees play a crucial
-                                        role in keeping everything running smoothly.
-                                    </p>
-                                </div>
-                                <div class="col-lg-6">
-                                    <img src="assets/images/home1/img-2.png" alt="Anchored Chaplain LLC" data-aos="flip-left">
-                                    <h5 class="mt-4 fw-medium">Place Of Heaven</h5>
-                                    <p data-aos="fade-up">
-                                        Beyond our spiritual gatherings, our church is a warm and welcoming community, buzzing with
-                                        social activities and connections.
-                                    </p>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="z-3 up-event-cover rounded-3">
@@ -125,7 +107,7 @@
                                             <div class="postion-relative">
                                                 <div class="project__item-four">
                                                     <div class="project__thumb-four">
-                                                        <a href=""><img src="assets/images/new/img1.jpg" alt="Anchored Chaplain LLC"></a>
+                                                        <a href=""><img src="assets/images/new/img2.jpg" alt="Anchored Chaplain LLC"></a>
                                                     </div>
                                                     <div class="project__content-four">
                                                         <div class="left-content">
@@ -145,7 +127,7 @@
                                             <div class="postion-relative">
                                                 <div class="project__item-four">
                                                     <div class="project__thumb-four">
-                                                        <a href="business-consultation.php"><img src="assets/images/new/img2.jpg" alt="Anchored Chaplain LLC"></a>
+                                                        <a href="business-consultation.php"><img src="assets/images/new/img1.jpg" alt="Anchored Chaplain LLC"></a>
                                                     </div>
                                                     <div class="project__content-four">
                                                         <div class="left-content">
