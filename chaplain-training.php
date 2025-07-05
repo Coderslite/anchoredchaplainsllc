@@ -103,9 +103,9 @@
                 ?>
             <div class="col">
                 <div class="card h-100 shadow-sm">
-                    <div class="card-body align-items-center justify-content-center mx-auto">
+                    <div class="card-body">
                         <h5 class="card-title fw-medium"><?php echo $row['title'] ?></h5>
-                        <a href="uploads/<?php echo $row['name']; ?>" class="mx-auto btn btn-outline-primary rounded-5" download>Download </a>
+                        <a href="uploads/<?php echo $row['name']; ?>" class="btn btn-outline-primary rounded-5" download>Download </a>
                     </div>
                 </div>
             </div>
