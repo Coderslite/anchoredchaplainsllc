@@ -53,7 +53,7 @@
                                             </div>
                                         </li>
                                     </ul>
-                                    <p class="fs-7 mt-3">contact@anchoredchaplainllc.com</p>
+                                    <p class="fs-7 mt-3">Chaplsmith@anchoredchaplainsllc.com</p>
                                 </div>
                             </div>
                         </div>

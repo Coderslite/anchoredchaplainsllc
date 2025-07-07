@@ -128,9 +128,11 @@ Author: wp-organic
                                         <ul class="navigation">
                                             <li class="<?php echo ($current_page == 'index.php') ? 'active' : ''; ?>"><a href="index.php">Home</a>
                                             </li>
-                                            <li class="<?php echo ($current_page == 'life-coach.php') ? 'active' : ''; ?>"><a href="life-coach.php">Life Coach</a></li>
+                                            <li class="<?php echo ($current_page == 'life-coach.php') ? 'active' : ''; ?>"><a href="life-coach.php">Life Coaching</a></li>
                                             <li class="<?php echo ($current_page == 'chaplain-training.php') ? 'active' : ''; ?>"><a href="chaplain-training.php">Chaplain Training</a></li>
-                                            <li class="<?php echo ($current_page == 'business-consultation.php') ? 'active' : ''; ?>"><a href="business-consultation.php">Business Consultation</a></li>
+                                            <li class="<?php echo ($current_page == 'chaplain-coaching.php') ? 'active' : ''; ?>"><a href="chaplain-coaching.php">Chaplain Coaching</a></li>
+                                            <li class="<?php echo ($current_page == 'business-consultation.php') ? 'active' : ''; ?>"><a href="business-consultation.php">Business Coaching</a></li>
+                                            <li class="<?php echo ($current_page == 'affiliate-signup.php') ? 'active' : ''; ?>"><a href="affiliate-signup.php">Affiliate Signup</a></li>
                                             <li class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>"><a href="contact.php">Contact</a></li>
                                     </div>
                                     <div class="tgmenu__action d-none d-xxl-flex">
@@ -149,7 +151,7 @@ Author: wp-organic
                                                 </ul>
                                             </li> -->
                                             <li class="header-btn">
-                                                <a href="javascript:" class="btn text-white rounded-5 btn-circle-arrow menu-tigger">
+                                                <a href="https://give.tithe.ly/my-church" target="_blank" class="btn text-white rounded-5 btn-circle-arrow menu-tigger">
                                                     <span>Donate</span>
                                                     <span class="bg-transparent ms-2">
                                                         <i class="size-16" data-feather="arrow-right"></i>
@@ -181,8 +183,8 @@ Author: wp-organic
                                     <div class="tgmobile__menu-bottom">
                                         <div class="contact-info">
                                             <ul class="list-wrap">
-                                                <li><a href="mailto:contact@blessed.com">contact@blessed.com</a></li>
-                                                <li><a href="tel:2295550109">(229) 555-0109</a></li>
+                                                <li><a href="mailto:Chaplsmith@anchoredchaplainsllc.com">Chaplsmith@anchoredchaplainsllc.com</a></li>
+                                                <li><a href="tel:2295550109">8082058154</a></li>
                                             </ul>
                                         </div>
                                         <div class="social-links">

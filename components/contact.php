@@ -1,6 +1,6 @@
     <!-- Get In Touch - Section
     =========================== -->
-    <section class="section-padding position-relative">
+    <section class="section-padding position-relative" id="contact">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -90,7 +90,7 @@
     </section>
 
 
-    <script>
+<script>
 $(document).ready(function(){
     $("#submitForm").submit(function(e) {
     e.preventDefault();    

@@ -155,11 +155,29 @@ include "php/security.php";
 		                </a>
 		            </li>
 
-		            <li class="side-nav-title">Books</li>
+		            <li class="side-nav-title">Components</li>
                     <li class="side-nav-item">
 		                <a href="books.php" class="side-nav-link">
 		                    <i class="ri-list-ordered"></i>
 		                    <span>Books </span>
+		                </a>
+		            </li>
+					<li class="side-nav-item">
+		                <a href="certificates.php" class="side-nav-link">
+		                    <i class="ri-list-ordered"></i>
+		                    <span>Certificates</span>
+		                </a>
+		            </li>
+					<li class="side-nav-item">
+		                <a href="pin.php" class="side-nav-link">
+		                    <i class="ri-list-ordered"></i>
+		                    <span>PIN </span>
+		                </a>
+		            </li>
+					<li class="side-nav-item">
+		                <a href="videos.php" class="side-nav-link">
+		                    <i class="ri-list-ordered"></i>
+		                    <span>Videos </span>
 		                </a>
 		            </li>
 		        </ul>

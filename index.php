@@ -1,7 +1,7 @@
 <?php include "includes/header.php";?>
             <!-- Slider Section
             =================== -->
-            <section class="banner-area banner-bg" data-background="assets/images/home1/hero-bg-1.png">
+            <section class="banner-area banner-bg" data-background="assets/images/new/bg.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -9,11 +9,11 @@
                                 <span class="sub-title text-uppercase fw-normal" data-aos="fade-up" data-aos-delay="0">Welcome to</span>
                                 <h2 class="title ds-3 fw-normal text-light" data-aos="fade-up" data-aos-delay="200">Anchored Chaplains LLC</h2>
                                 <em class="text-light fs-6" data-aos="fade-up" data-aos-delay="400">"And they that shall be of thee shall build the old waste places; thou shalt raise up the foundations of many generations; and thou shall be called the REPAIRER OF THE BREACH, the restorer of paths to dwell in. [Isaiah 58:12]"</em>
-                                <a href="life-coach.php" class="btn-cirle d-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
+                                <a href="general-form.php" class="btn-cirle d-flex align-items-center" data-aos="fade-up" data-aos-delay="600">
                                     <span class="circle-arrow">
                                         <i data-feather="arrow-right"></i>
                                     </span>
-                                    <span class="text-white fs-5">Explore Now</span>
+                                    <span class="text-white fs-5">Sign Up</span>
                                 </a>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                                             <div class="postion-relative">
                                                 <div class="project__item-four">
                                                     <div class="project__thumb-four">
-                                                        <a href="life-coach.php"><img src="assets/images/pastor-details/img-pastor-details-sec-1.png" alt="Anchored Chaplain LLC"></a>
+                                                        <a href="life-coach.php"><img src="assets/images/new/bg3.jpg" alt="Anchored Chaplain LLC"></a>
                                                     </div>
                                                     <div class="project__content-four">
                                                         <div class="left-content">
@@ -107,7 +107,7 @@
                                             <div class="postion-relative">
                                                 <div class="project__item-four">
                                                     <div class="project__thumb-four">
-                                                        <a href=""><img src="assets/images/new/img2.jpg" alt="Anchored Chaplain LLC"></a>
+                                                        <a href=""><img src="assets/images/new/bg5.jpg" alt="Anchored Chaplain LLC"></a>
                                                     </div>
                                                     <div class="project__content-four">
                                                         <div class="left-content">
@@ -127,7 +127,7 @@
                                             <div class="postion-relative">
                                                 <div class="project__item-four">
                                                     <div class="project__thumb-four">
-                                                        <a href="business-consultation.php"><img src="assets/images/new/img1.jpg" alt="Anchored Chaplain LLC"></a>
+                                                        <a href="business-consultation.php"><img src="assets/images/new/bg4.jpg" alt="Anchored Chaplain LLC"></a>
                                                     </div>
                                                     <div class="project__content-four">
                                                         <div class="left-content">
@@ -159,7 +159,7 @@
 
             <!-- Testimonials Section
             ========================= -->
-            <section class="home1-section10 pt-50px">
+            <!-- <section class="home1-section10 pt-50px">
                 <div class="container">
                     <div class="row mb-lg-5 m-2">
 
@@ -295,6 +295,6 @@
                     </div>
 
                 </div>
-            </section>
+            </section> -->
 
     <?php include "includes/footer.php";?>
