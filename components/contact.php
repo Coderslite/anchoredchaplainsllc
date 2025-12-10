@@ -13,13 +13,13 @@
                             <ul class="list-wrap">
                                 <li class="mb-4">
                                     <div class="icon-1">
-                                        <a href="mailto:contact@anchoredchaplainllc.com">
+                                        <a href="mailto:chaplsmith@anchoredchaplainsllc.com">
                                             <i class="size-32" data-feather="mail"></i>
                                         </a>
                                     </div>
                                     <div class="content">
                                         <p class="title fs-7">Send us an email</p>
-                                        <a class="fs-5 text-dark" href="mailto:contact@anchoredchaplainllc.com">contact@anchoredchaplainllc.com</a>
+                                        <a class="fs-5 text-dark" href="mailto:chaplsmith@anchoredchaplainsllc.com">chaplsmith@anchoredchaplainsllc.com</a>
                                     </div>
                                 </li>
                                 <li class="mb-4">

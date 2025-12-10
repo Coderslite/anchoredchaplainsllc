@@ -67,7 +67,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <h2 class="text-center fw-bold mb-5">Book Coaching & Self-Publishing Support</h2>
-                <p class="text-center lead mb-5">I walk alongside you through each stage of the journey:</p>
+                <p class="text-center lead mb-5">We walk alongside you through each stage of the journey:</p>
 
                 <div class="row g-5">
                     <div class="col-md-6">
@@ -216,24 +216,6 @@
                 <div class="display-4 text-primary fw-bold">4</div>
                 <h5>Publish & Share</h5>
                 <p>We upload and launch your book to the world!</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About the Coach -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                <img src="assets/images/coach/thresia-phillips.jpg" alt="Chaplain Thresia Phillips" class="img-fluid rounded-circle shadow" width="300">
-            </div>
-            <div class="col-lg-8">
-                <h2 class="fw-bold mb-3">About Your Book Coach</h2>
-                <h4>Chaplain Thresia Phillips</h4>
-                <p class="lead">Chaplain Thresia Phillips is a book coach, author, and ministry leader who helps new authors bring their stories and God-given messages to life.</p>
-                <p>With experience in self-publishing, ministry, and outreach, she understands both the spiritual side of writing and the practical steps needed to get your book in readers’ hands.</p>
-                <p><strong>Her heart is to help authors turn pain into purpose, testimony into teaching, and vision into a finished book.</strong></p>
             </div>
         </div>
     </div>
