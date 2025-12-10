@@ -120,3 +120,56 @@
 
 <!-- Mirrored from wporganic.com/html/Anchored Chaplains LLC-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Jul 2025 11:50:03 GMT -->
 </html>
+
+<script>
+$(document).ready(function(){
+    $("#submitForm").submit(function(e) {
+    e.preventDefault();    
+    var formData = new FormData(this);
+    $.ajax({
+        url: 'php/contact.php',
+		type: 'POST',
+        contentType: false,
+        cache: false,
+        processData: false,
+        data: formData,
+        dataType: 'json',
+        beforeSend:function(){
+            Swal.fire({
+            html:'<div style="font-size: 15px; width:4rem; height:4rem;" class="spinner-border"></div>',
+            showConfirmButton:false
+            });
+        
+        },
+        success: function (data) {
+            if(data.trim() == 'success'){
+                
+                Swal.fire({
+                    icon:'success',					
+                    html:'<div class=""> Message Successful</div>',
+                    showConfirmButton:true,
+                    allowOutsideClick:false
+                }).then((result) => {
+                    location.href="contact.php";	// location.href="";
+
+                })
+            }
+            else{
+                Swal.fire({
+                    icon:'error',
+                    html:data,
+                    allowOutsideClick:false
+                });
+            }		
+        },
+        error:function(){
+            Swal.fire({
+                icon:'error',
+                html:'<div>Something went wrong</div>',
+                allowOutsideClick:false
+            });
+        },
+    });
+});
+});
+</script>

@@ -132,6 +132,7 @@ Author: wp-organic
                                             <li class="<?php echo ($current_page == 'chaplain-training.php') ? 'active' : ''; ?>"><a href="chaplain-training.php">Chaplain Training</a></li>
                                             <li class="<?php echo ($current_page == 'chaplain-coaching.php') ? 'active' : ''; ?>"><a href="chaplain-coaching.php">Chaplain Coaching</a></li>
                                             <li class="<?php echo ($current_page == 'business-consultation.php') ? 'active' : ''; ?>"><a href="business-consultation.php">Business Coaching</a></li>
+                                            <li class="<?php echo ($current_page == 'book-coaching.php') ? 'active' : ''; ?>"><a href="book-coaching.php">Book Coaching</a></li>
                                             <li class="<?php echo ($current_page == 'affiliate-signup.php') ? 'active' : ''; ?>"><a href="affiliate-signup.php">Affiliate Signup</a></li>
                                             <li class="<?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>"><a href="contact.php">Contact</a></li>
                                     </div>
