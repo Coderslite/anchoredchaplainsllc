@@ -29,7 +29,7 @@
                     <a href="#contact" class="btn btn-primary btn-lg rounded-5 px-5">
                         Book a Free Discovery Call
                     </a>
-                    <a href="assets/downloads/Book-Coaching-Info-Sheet.pdf" target="_blank" class="btn btn-outline-primary btn-lg rounded-5 px-5">
+                    <a href="assets/sample-pdf/Publishing_Checklist_Fillable.pdf" target="_blank" class="btn btn-outline-primary btn-lg rounded-5 px-5">
                         <i class="fas fa-download me-2"></i> Download Info Sheet
                     </a>
                 </div>
