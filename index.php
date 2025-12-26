@@ -1,7 +1,7 @@
 <?php include "includes/header.php";?>
             <!-- Slider Section
             =================== -->
-            <section class="banner-area banner-bg" data-background="assets/images/new/bg.jpg">
+            <section class="banner-area banner-bg" data-background="assets/images/new/img7.jpeg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">

@@ -1,0 +1,43 @@
+# Prevent directory listing
+Options -Indexes
+
+# Protect config files
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Protect includes directory
+<FilesMatch "\.(php|inc)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Allow access to specific files in includes
+<Files "header.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "footer.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect to index.php if file doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
+# Prevent hotlinking
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?yourdomain.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif|pdf)$ - [NC,F,L]
+
+# Security headers
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
