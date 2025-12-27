@@ -146,7 +146,7 @@ $recentClients = mysqli_query(
                                         <td><?php echo $row['approved_date'];?></td>
                                         <td><?php echo $row['renewed_date'];?></td>
                                         <td>
-                                           <div class="d-flex gap-2">
+                                            <div class="d-flex gap-2">
                                                 <a class="btn btn-success" href="view-client.php?id=<?php echo $row['id'];?>">View</a>
                                                 <a href="javascript:void(0)"
                                                     class="btn btn-danger delete-client-btn"
@@ -192,3 +192,13 @@ $recentClients = mysqli_query(
 </style>
 
 <?php include "includes/footer.php"; ?>
+
+<script>
+document.querySelectorAll('.delete-client-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to delete this client?')) {
+            window.location.href = 'php/delete_client.php?id=' + btn.dataset.id+'&route=chaplain-coaching';
+        }
+    });
+});
+</script>
