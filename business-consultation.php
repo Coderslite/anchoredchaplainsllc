@@ -213,8 +213,8 @@
                     <p class="lead">Fill out the form below or book a call and let’s choose the plan that’s right for you.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a href="#contact" class="btn btn-white btn-lg rounded-5 px-5 text-primary">
-                        Schedule My Free Business Setup Call <i class="ms-2" data-feather="arrow-right"></i>
+                    <a href="apply.php" class="btn btn-white btn-lg rounded-5 px-5 text-primary">
+                       Apply Now<i class="ms-2" data-feather="arrow-right"></i>
                     </a>
                 </div>
             </div>

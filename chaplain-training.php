@@ -96,7 +96,7 @@ include "php/session.php";
                 </div>
             </div>
             <?php 
-            include "admin/php/db_config.php";
+            include "admin-2/php/db_config.php";
             $query = mysqli_query($con, "SELECT * FROM books");
             while($row = mysqli_fetch_assoc($query)) {
             ?>
@@ -149,7 +149,7 @@ include "php/session.php";
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php 
-            include "admin/php/db_config.php";
+            include "admin-2/php/db_config.php";
             $query = mysqli_query($con, "SELECT * FROM books");
             while($row = mysqli_fetch_assoc($query)) {
             ?>
@@ -193,7 +193,7 @@ include "php/session.php";
                 </div>
             </div>
             <?php 
-            include "admin/php/db_config.php";
+            include "admin-2/php/db_config.php";
             $query = mysqli_query($con, "SELECT * FROM certificates");
             while($row = mysqli_fetch_assoc($query)) {
             ?>
@@ -223,7 +223,7 @@ include "php/session.php";
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php 
-            include "admin/php/db_config.php";
+            include "admin-2/php/db_config.php";
             $query = mysqli_query($con, "SELECT * FROM certificates");
             while($row = mysqli_fetch_assoc($query)) {
             ?>
@@ -267,7 +267,7 @@ include "php/session.php";
                 </div>
             </div>
             <?php 
-            include "admin/php/db_config.php";
+            include "admin-2/php/db_config.php";
             $query = mysqli_query($con, "SELECT * FROM videos");
             $index = 0;
             while($row = mysqli_fetch_assoc($query)) {
@@ -295,7 +295,7 @@ include "php/session.php";
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <?php 
-            include "admin/php/db_config.php";
+            include "admin-2/php/db_config.php";
             $query = mysqli_query($con, "SELECT * FROM videos");
             $index = 0;
             while($row = mysqli_fetch_assoc($query)) {
@@ -330,8 +330,8 @@ include "php/session.php";
                                 Your desire to serve is the beginning. Our training will prepare you for the rest.
                             </h4>
                         </div>
-                        <a href="#contact" class="btn mt-4 mt-xl-0 btn-white rounded-5 btn-circle-arrow" data-aos="flip-down">
-                            <span class="text">Answer the Call</span>
+                        <a href="apply.php" class="btn mt-4 mt-xl-0 btn-white rounded-5 btn-circle-arrow" data-aos="flip-down">
+                            <span class="text">Apply</span>
                             <span class="bg-transparent ms-2">
                                 <i class="size-16" data-feather="arrow-right"></i>
                             </span>

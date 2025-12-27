@@ -85,8 +85,8 @@ include "includes/header.php";
                                 Let’s walk this journey together with faith, wisdom, and care.
                             </h4>
                         </div>
-                        <a href="#contact" class="btn mt-4 mt-xl-0 btn-white rounded-5 btn-circle-arrow" data-aos="flip-down">
-                            <span class="text">Answer the Call</span>
+                        <a href="apply.php" class="btn mt-4 mt-xl-0 btn-white rounded-5 btn-circle-arrow" data-aos="flip-down">
+                            <span class="text">Apply Now</span>
                             <span class="bg-transparent ms-2">
                                 <i class="size-16" data-feather="arrow-right"></i>
                             </span>

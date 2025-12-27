@@ -7,7 +7,7 @@ $program = $_POST['program'];
 $additional = $_POST['message'];
 $date = date('Y-m-d');
 
-$query = mysqli_query($con,"INSERT INTO clients (fullname,email,phone,program,additional_information,status,created_at)VALUES('$fname','$email','$phone','$program','$additional','active','$date')");
+$query = mysqli_query($con,"INSERT INTO clients (fullname,email,phone,applied_program,additional_information,status,created_at)VALUES('$fname','$email','$phone','$program','$additional','active','$date')");
 
 if($query){
     $result ='success';

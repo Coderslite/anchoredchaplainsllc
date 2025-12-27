@@ -91,8 +91,8 @@
                                  We make the process smooth and easy so you can focus on your calling. No stress. No confusion. Just results.
                             </h4>
                         </div>
-                        <a href="#contact" class="btn mt-4 mt-xl-0 btn-white rounded-5 btn-circle-arrow" data-aos="flip-down">
-                            <span class="text">Get Started</span>
+                        <a href="apply.php" class="btn mt-4 mt-xl-0 btn-white rounded-5 btn-circle-arrow" data-aos="flip-down">
+                            <span class="text">Apply Now</span>
                             <span class="bg-transparent ms-2">
                                 <i class="size-16" data-feather="arrow-right"></i>
                             </span>

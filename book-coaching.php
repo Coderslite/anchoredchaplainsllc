@@ -280,8 +280,8 @@
                     <p class="lead">Fill out the form below and let’s talk about your book — no pressure, just clarity.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a href="#contact" class="btn btn-white btn-lg rounded-5 px-5 text-primary">
-                        Schedule My Free Call <i class="ms-2" data-feather="arrow-right"></i>
+                    <a href="apply.php" class="btn btn-white btn-lg rounded-5 px-5 text-primary">
+                        Apply Now<i class="ms-2" data-feather="arrow-right"></i>
                     </a>
                 </div>
             </div>
