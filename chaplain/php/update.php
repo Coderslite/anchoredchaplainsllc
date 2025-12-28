@@ -10,6 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $fullname = mysqli_real_escape_string($con, $_POST['fullname']);
         $email = mysqli_real_escape_string($con, $_POST['email']);
         $phone = mysqli_real_escape_string($con, $_POST['phone']);
+        $dob = mysqli_real_escape_string($con, $_POST['dob']);
+        $address = mysqli_real_escape_string($con, $_POST['address']);
         $program_applied = mysqli_real_escape_string($con, $_POST['program_applied']);
         $status = mysqli_real_escape_string($con, $_POST['status']);
         $additional_information = mysqli_real_escape_string($con, $_POST['additional_information']);
@@ -25,6 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 fullname = '$fullname',
                 email = '$email',
                 phone = '$phone',
+                dob = '$dob',
+                address = '$address',
                 program_applied = '$program_applied',
                 assigned_chaplain = $assigned_chaplain,
                 applied_date = $applied_date,

@@ -47,6 +47,8 @@
                             $email = htmlspecialchars(trim($_POST['email']));
                             $program = htmlspecialchars(trim($_POST['program']));
                             $phone = htmlspecialchars(trim($_POST['phone']));
+                            $dob = htmlspecialchars(trim($_POST['dob']));
+                            $address = htmlspecialchars(trim($_POST['address']));
                             $message = htmlspecialchars(trim($_POST['message']));
                             
                             // Basic validation
@@ -69,6 +71,14 @@
                             if (empty($phone)) {
                                 $errors[] = "Phone number is required";
                             }
+
+                            if (empty($dob)) {
+                                $errors[] = "Date of Birth is required";
+                            }
+
+                            if (empty($address)) {
+                                $errors[] = "Address is required";
+                            }
                             
                             // If no errors, process the application
                             if (empty($errors)) {
@@ -84,7 +94,7 @@
                                       </div>';
                                 
                                 // Reset form values for new submission
-                                $name = $email = $program = $phone = $message = '';
+                                $name = $email = $program = $phone = $message = $address = $dob = '';
                             } else {
                                 // Show errors
                                 echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -138,6 +148,22 @@
                                        value="<?php echo isset($phone) ? $phone : ''; ?>" 
                                        placeholder="Enter your phone number" required>
                                 <div class="form-text">We'll contact you at this number</div>
+                            </div>
+
+                            <!-- Address -->
+                            <div class="mb-4">
+                                <label for="address" class="form-label fw-semibold">Address *</label>
+                                <input type="address" class="form-control form-control-lg" id="address" name="address" 
+                                       value="<?php echo isset($address) ? $address: ''; ?>" 
+                                       placeholder="Enter your Home Address" required>
+                            </div>
+
+                            <!-- DOB -->
+                            <div class="mb-4">
+                                <label for="dob" class="form-label fw-semibold">Date of Birth *</label>
+                                <input type="date" class="form-control form-control-lg" id="dob" name="dob" 
+                                       value="<?php echo isset($dob) ? $dob: ''; ?>" 
+                                       required>
                             </div>
                             
                             <!-- Additional Message -->

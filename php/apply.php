@@ -5,9 +5,11 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $program = $_POST['program'];
 $additional = $_POST['message'];
+$dob =$_POST['dob'];
+$address = $_POST['address'];
 $date = date('Y-m-d');
 
-$query = mysqli_query($con,"INSERT INTO clients (fullname,email,phone,applied_program,additional_information,status,created_at)VALUES('$fname','$email','$phone','$program','$additional','active','$date')");
+$query = mysqli_query($con,"INSERT INTO clients (fullname,email,phone,program_applied,additional_information,dob,address,status,created_at)VALUES('$fname','$email','$phone','$program','$additional','$dob','$address','active','$date')");
 
 if($query){
     $result ='success';

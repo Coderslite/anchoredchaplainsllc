@@ -185,6 +185,14 @@ $chaplains_query = mysqli_query($con, "SELECT * FROM chaplains WHERE status = 'A
                             <input type="tel" class="form-control" name="phone" value="<?php echo $client['phone']; ?>">
                         </div>
                         <div class="col-md-6 mb-3">
+                            <label class="form-label">DOB</label>
+                            <input type="date" class="form-control" name="dob" value="<?php echo $client['dob']; ?>">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Address</label>
+                            <input type="address" class="form-control" name="address" value="<?php echo $client['address']; ?>">
+                        </div>
+                        <div class="col-md-6 mb-3">
                             <label class="form-label">Program Applied</label>
                             <select class="form-select" name="program_applied">
                                 <option value="">Select Program</option>

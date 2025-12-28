@@ -164,8 +164,11 @@ include "php/security.php";
                 </div>
               </div>
               <ul class="profile-dropdown onhover-show-div">
-                <!-- <li><a href="user-profile.html"><i data-feather="user"></i><span>Account </span></a></li> -->
-                <li><a href="login.html"> <i data-feather="log-in"></i><span>Log Out</span></a></li>
+                <li>
+                  <form method="POST" action="php/logout.php">
+                    <button name="logout" class="btn btn-danger text-white" type="submit"><i class="text-white" data-feather="log-in"></i><span class="text-white">Log Out</span></button>
+                  </form>
+                </li>
               </ul>
             </li>
           </ul>
