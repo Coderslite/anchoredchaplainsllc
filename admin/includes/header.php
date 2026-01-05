@@ -5,6 +5,8 @@ include "php/db_config.php";
 include "php/security.php";
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -97,6 +99,9 @@ include "php/security.php";
   <link id="color" rel="stylesheet" href="assets/css/color-1.css" media="screen">
   <!-- Responsive css-->
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -218,95 +223,78 @@ include "php/security.php";
                     <h6 class="lan-1">General</h6>
                   </div>
                 </li>
-                <li class="sidebar-list"></i><a class="sidebar-link sidebar-title" href="index.php">
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="index.php">
                     <svg class="stroke-icon">
                       <use href="assets/svg/icon-sprite.svg#stroke-home"></use>
                     </svg>
                     <svg class="fill-icon">
                       <use href="assets/svg/icon-sprite.svg#fill-home"></use>
-                    </svg><span>Dashboard </span></a>
+                    </svg>
+                    <span>Dashboard</span>
+                  </a>
                 </li>
+                
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="chaplains.php">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-user-check"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-user-check"></use>
-                    </svg>
+                    <i class="fas fa-hands-helping sidebar-icon"></i>
                     <span>Chaplains</span>
                   </a>
                 </li>
 
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="chaplain-coaching.php">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-user-check"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-user-check"></use>
-                    </svg>
+                    <i class="fas fa-hands-helping sidebar-icon"></i>
                     <span>Chaplain Coaching</span>
                   </a>
                 </li>
 
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="chaplain-training.php">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-book-open"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-book-open"></use>
-                    </svg>
+                    <i class="fas fa-graduation-cap sidebar-icon"></i>
                     <span>Chaplain Training</span>
                   </a>
                 </li>
 
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="book-coaching.php">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-calendar"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-calendar"></use>
-                    </svg>
+                    <i class="fas fa-book-reader sidebar-icon"></i>
                     <span>Book Coaching</span>
                   </a>
                 </li>
 
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="life-coaching.php">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-heart"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-heart"></use>
-                    </svg>
+                    <i class="fas fa-heart sidebar-icon"></i>
                     <span>Life Coaching</span>
                   </a>
                 </li>
 
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="business-coaching.php">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-briefcase"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-briefcase"></use>
-                    </svg>
+                    <i class="fas fa-briefcase sidebar-icon"></i>
                     <span>Business Coaching</span>
                   </a>
                 </li>
 
                 <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="affiliate.php">
-                    <svg class="stroke-icon">
-                      <use href="assets/svg/icon-sprite.svg#stroke-share-2"></use>
-                    </svg>
-                    <svg class="fill-icon">
-                      <use href="assets/svg/icon-sprite.svg#fill-share-2"></use>
-                    </svg>
-                    <span>Affiliate</span>
+                    <i class="fas fa-handshake sidebar-icon"></i>
+                    <span>Affiliate Program</span>
+                  </a>
+                </li>
+
+                <!-- Reports Section -->
+                <li class="sidebar-main-title mt-3">
+                  <div>
+                    <h6 class="lan-1">Analytics & Reports</h6>
+                  </div>
+                </li>
+                
+                <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="report.php">
+                    <i class="fas fa-chart-line sidebar-icon"></i>
+                    <span>Analytics Report</span>
                   </a>
                 </li>
 
@@ -317,5 +305,3 @@ include "php/security.php";
         </div>
       </div>
       <!-- Page Sidebar Ends-->
-
-
