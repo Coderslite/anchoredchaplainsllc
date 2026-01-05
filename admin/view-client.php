@@ -95,6 +95,14 @@ $chaplains_query = mysqli_query($con, "SELECT * FROM chaplains WHERE status = 'A
                                             <p class="text-muted mb-1">Phone</p>
                                             <p class="fw-medium mb-0"><?php echo $client['phone']; ?></p>
                                         </div>
+                                        <div class="col-6">
+                                            <p class="text-muted mb-1">DOB</p>
+                                            <p class="fw-medium mb-0"><?php echo $client['dob']; ?></p>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-muted mb-1">Address</p>
+                                            <p class="fw-medium mb-0"><?php echo $client['address']; ?></p>
+                                        </div>
                                     </div>
                                     
                                     <h6 class="mb-3 border-bottom pb-2">Program Details</h6>
