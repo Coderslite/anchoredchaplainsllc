@@ -29,5 +29,5 @@ $stmt->bind_param(
 
 $stmt->execute();
 
-header("Location: ../.$route.php");
+header("Location: ../$route.php");
 exit;
