@@ -318,7 +318,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
 document.querySelectorAll('.delete-client-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         if (confirm('Are you sure you want to delete this client?')) {
-            window.location.href = 'php/delete_client.php?id=' + btn.dataset.id+'&route=chaplain-coaching';
+            window.location.href = 'php/delete_client.php?id=' + btn.dataset.id+'&route=life-coaching';
         }
     });
 });

@@ -258,6 +258,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
                 <div class="modal-body">
 
                     <input type="hidden" name="program_applied" value="Book Coaching">
+                    <input type="hidden" name="route" value="book-coaching">
 
                     <div class="row g-3">
 

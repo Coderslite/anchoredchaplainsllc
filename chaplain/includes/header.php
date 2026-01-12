@@ -289,6 +289,13 @@ $chaplainId = $_SESSION['chaplain-id'];
                 </li>
 
                 <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="tax-customer.php">
+                    <i class="fas fa-briefcase sidebar-icon"></i>
+                    <span>Tax Customer</span>
+                  </a>
+                </li>
+
+                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="affiliate.php">
                     <svg class="stroke-icon">
                       <use href="assets/svg/icon-sprite.svg#stroke-share-2"></use>

@@ -136,6 +136,7 @@
                                     <option value="Chaplain Coaching" <?php echo (isset($program) && $program == 'Chaplain Coaching') ? 'selected' : ''; ?>>Chaplain Coaching</option>
                                     <option value="Business Coaching" <?php echo (isset($program) && $program == 'Business Coaching') ? 'selected' : ''; ?>>Business Coaching</option>
                                     <option value="Book Coaching" <?php echo (isset($program) && $program == 'Book Coaching') ? 'selected' : ''; ?>>Book Coaching</option>
+                                    <option value="Tax Customer" <?php echo (isset($program) && $program == 'Tax Customer') ? 'selected' : ''; ?>>Tax Customer</option>
                                     <option value="Affiliate Program" <?php echo (isset($program) && $program == 'Affiliate Program') ? 'selected' : ''; ?>>Affiliate Program</option>
                                 </select>
                                 <div class="form-text">Choose the program you're interested in joining</div>

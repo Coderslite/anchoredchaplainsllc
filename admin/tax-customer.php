@@ -5,7 +5,7 @@ $query = mysqli_query(
     $con,
     "SELECT *
      FROM clients 
-     WHERE program_applied = 'Business Coaching' AND assigned_chaplain = '$chaplainId' AND status <> 'deleted'"
+     WHERE program_applied = 'Tax Customer' AND status <> 'deleted'"
 );
 
 
@@ -13,7 +13,7 @@ $totalClientsQuery = mysqli_query(
     $con,
     "SELECT COUNT(*) AS total 
      FROM clients 
-     WHERE program_applied = 'Business Coaching' AND assigned_chaplain = '$chaplainId' AND status <> 'deleted'"
+     WHERE program_applied = 'Tax Customer' AND status <> 'deleted'"
 );
 
 $totalClients = mysqli_fetch_assoc($totalClientsQuery)['total'];
@@ -23,8 +23,7 @@ $expiredRenewalQuery = mysqli_query(
     $con,
     "SELECT COUNT(*) AS expired 
      FROM clients 
-     WHERE program_applied = 'Business Coaching'
-     AND assigned_chaplain = '$chaplainId'
+     WHERE program_applied = 'Tax Customer'
      AND approved_date IS NOT NULL
      AND status <> 'deleted'
      AND (
@@ -46,7 +45,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
                 <div class="card h-100">
                     <div class="card-header pb-0 d-flex justify-content-between align-items-center">
                         <div>
-                            <h4 class="mb-0">Business Coaching</h4>
+                            <h4 class="mb-0">Tax Customer</h4>
                             <p class="text-muted mb-0">Active clients and engagement</p>
                         </div>
                         <div class="dropdown icon-dropdown setting-menu">
@@ -101,18 +100,18 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
                 <div class="card">
                     <div class="card-header card-no-border">
                         <div class="header-top">
-                            <h4>Business Coaching Registration</h4>
+                            <h4>Tax Customer Registration</h4>
                         </div>
                     </div>
                     <div class="card-body pt-0">
                         <div class="table-responsive custom-scrollbar">
                             <table class=" table" id="last-orders">
                                 <div class="mt-3 align-item-right d-flex">
-                                    <!-- <button class="btn btn-primary btn-sm"
+                                    <button class="btn btn-primary btn-sm"
                                         data-bs-toggle="modal"
                                         data-bs-target="#addClientModal">
                                         + Add Client
-                                    </button> -->
+                                    </button>
                                 </div>
                                 <thead>
                                     <tr>
@@ -250,7 +249,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
 
             <!-- Header -->
             <div class="modal-header">
-                <h5 class="modal-title">Add New Business Coaching Client</h5>
+                <h5 class="modal-title">Add New Tax Customer Client</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
@@ -258,8 +257,8 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
             <form action="php/add_client.php" method="POST">
                 <div class="modal-body">
 
-                    <input type="hidden" name="program_applied" value="Business Coaching">
-                    <input type="hidden" name="route" value="business-coaching">
+                    <input type="hidden" name="program_applied" value="Tax Customer">
+                    <input type="hidden" name="route" value="tax-customer">
 
                     <div class="row g-3">
 
@@ -318,7 +317,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
 document.querySelectorAll('.delete-client-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         if (confirm('Are you sure you want to delete this client?')) {
-            window.location.href = 'php/delete_client.php?id=' + btn.dataset.id+'&route=business-coaching';
+            window.location.href = 'php/delete_client.php?id=' + btn.dataset.id+'&route=tax-customer';
         }
     });
 });

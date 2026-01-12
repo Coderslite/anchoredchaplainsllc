@@ -278,6 +278,13 @@ include "php/security.php";
                 </li>
 
                 <li class="sidebar-list">
+                  <a class="sidebar-link sidebar-title" href="tax-customer.php">
+                    <i class="fas fa-briefcase sidebar-icon"></i>
+                    <span>Tax Customer</span>
+                  </a>
+                </li>
+
+                <li class="sidebar-list">
                   <a class="sidebar-link sidebar-title" href="affiliate.php">
                     <i class="fas fa-handshake sidebar-icon"></i>
                     <span>Affiliate Program</span>
