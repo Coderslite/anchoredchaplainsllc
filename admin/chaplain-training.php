@@ -49,8 +49,8 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
                             <p class="text-muted mb-0">Active clients and engagement</p>
                         </div>
                         <div class="dropdown icon-dropdown setting-menu">
-                            <button class="btn dropdown-toggle" id="userdropdown1" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <button class="btn dropdown-toggle" id="userdropdown1" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <svg>
                                     <use href="assets/svg/icon-sprite.svg#setting"></use>
                                 </svg>
@@ -73,7 +73,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
                                                 <use href="assets/svg/icon-sprite.svg#user"></use>
                                             </svg>
                                         </div>
-                                        <h3 class="mb-1"><?php echo $totalClients;?></h3>
+                                        <h3 class="mb-1"><?php echo $totalClients; ?></h3>
                                         <p class="text-muted mb-0">Total Clients</p>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
             </div>
 
 
-              <!-- Recent Registration Table -->
+            <!-- Recent Registration Table -->
             <div class="col-xl-12 col-md-12 box-col-12 proorder-md-4">
                 <div class="card">
                     <div class="card-header card-no-border">
@@ -107,11 +107,13 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
                         <div class="table-responsive custom-scrollbar">
                             <table class=" table" id="last-orders">
                                 <div class="mt-3 align-item-right d-flex">
-                                    <button class="btn btn-primary btn-sm"
-                                        data-bs-toggle="modal"
+                                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
                                         data-bs-target="#addClientModal">
                                         + Add Client
                                     </button>
+                                    <a href="php/export_chaplain_clients.php" class="btn btn-success btn-sm">
+                                        Export Excel
+                                    </a>
                                 </div>
                                 <thead>
                                     <tr>
@@ -125,42 +127,42 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php 
-                                    $count = 0;
-                                    while($row = mysqli_fetch_assoc($query)){
-                                        $count+1;
-                                        ?>
-                                    <!-- Table rows remain the same -->
-                                    <tr>
-                                        <td>
-                                            <div class="flex">
-                                                <!-- <div><img src="assets/images/dashboard/avtar/2.jpg" alt="avatar" class="rounded-circle"></div> -->
-                                                <div>
-                                                    <a>
-                                                        <h4><?php echo $row['fullname'];?></h4>
-                                                    </a>
-                                                    <!-- <span>Switzerland</span> -->
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td><?php echo $row['email'];?></td>
-                                        <td><?php echo $row['phone'];?></td>
-                                        <td><?php echo $row['applied_date'];?></td>
-                                        <td><?php echo $row['approved_date'];?></td>
-                                        <td><?php echo $row['renewed_date'];?></td>
-                                        <td>
-                                           <div class="d-flex gap-2">
-                                                <a class="btn btn-success" href="view-client.php?id=<?php echo $row['id'];?>">View</a>
-                                                <a href="javascript:void(0)"
-                                                    class="btn btn-danger delete-client-btn"
-                                                    data-id="<?= $row['id']; ?>">
-                                                    Delete
-                                                </a>
-                                           </div>
-                                        </td>
-                                    </tr>
-                                    <!-- Other table rows... -->
                                     <?php
+                                    $count = 0;
+                                    while ($row = mysqli_fetch_assoc($query)) {
+                                        $count + 1;
+                                        ?>
+                                        <!-- Table rows remain the same -->
+                                        <tr>
+                                            <td>
+                                                <div class="flex">
+                                                    <!-- <div><img src="assets/images/dashboard/avtar/2.jpg" alt="avatar" class="rounded-circle"></div> -->
+                                                    <div>
+                                                        <a>
+                                                            <h4><?php echo $row['fullname']; ?></h4>
+                                                        </a>
+                                                        <!-- <span>Switzerland</span> -->
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td><?php echo $row['email']; ?></td>
+                                            <td><?php echo $row['phone']; ?></td>
+                                            <td><?php echo $row['applied_date']; ?></td>
+                                            <td><?php echo $row['approved_date']; ?></td>
+                                            <td><?php echo $row['renewed_date']; ?></td>
+                                            <td>
+                                                <div class="d-flex gap-2">
+                                                    <a class="btn btn-success"
+                                                        href="view-client.php?id=<?php echo $row['id']; ?>">View</a>
+                                                    <a href="javascript:void(0)" class="btn btn-danger delete-client-btn"
+                                                        data-id="<?= $row['id']; ?>">
+                                                        Delete
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!-- Other table rows... -->
+                                        <?php
                                     }
                                     ?>
                                 </tbody>
@@ -175,72 +177,94 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
 </div>
 
 <style>
-/* Custom styles for the redesigned cards */
-.stat-card {
-    transition: transform 0.3s ease;
-    border: 1px solid transparent;
-}
+    /* Custom styles for the redesigned cards */
+    .stat-card {
+        transition: transform 0.3s ease;
+        border: 1px solid transparent;
+    }
 
-.stat-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--bs-primary);
-}
+    .stat-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--bs-primary);
+    }
 
-.stat-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
+    .stat-icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
 
-.stat-card h3 {
-    font-weight: 700;
-    color: var(--bs-dark);
-}
+    .stat-card h3 {
+        font-weight: 700;
+        color: var(--bs-dark);
+    }
 
-.activity-item {
-    padding: 8px;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-}
+    .activity-item {
+        padding: 8px;
+        border-radius: 8px;
+        transition: background-color 0.2s ease;
+    }
 
-.activity-item:hover {
-    background-color: var(--bs-light);
-}
+    .activity-item:hover {
+        background-color: var(--bs-light);
+    }
 
-.activity-icon {
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .activity-icon {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.bg-light-primary { background-color: rgba(var(--bs-primary-rgb), 0.1) !important; }
-.bg-light-success { background-color: rgba(var(--bs-success-rgb), 0.1) !important; }
-.bg-light-info { background-color: rgba(var(--bs-info-rgb), 0.1) !important; }
-.bg-light-warning { background-color: rgba(var(--bs-warning-rgb), 0.1) !important; }
-.bg-light-pink { background-color: rgba(255, 107, 159, 0.1) !important; }
-.bg-light-orange { background-color: rgba(255, 159, 67, 0.1) !important; }
+    .bg-light-primary {
+        background-color: rgba(var(--bs-primary-rgb), 0.1) !important;
+    }
 
-.text-pink { color: #ff6b9f !important; }
-.text-orange { color: #ff9f43 !important; }
+    .bg-light-success {
+        background-color: rgba(var(--bs-success-rgb), 0.1) !important;
+    }
 
-.card {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #f0f0f0;
-}
+    .bg-light-info {
+        background-color: rgba(var(--bs-info-rgb), 0.1) !important;
+    }
 
-.card-header {
-    background: transparent;
-    border-bottom: 1px solid #f0f0f0;
-}
+    .bg-light-warning {
+        background-color: rgba(var(--bs-warning-rgb), 0.1) !important;
+    }
+
+    .bg-light-pink {
+        background-color: rgba(255, 107, 159, 0.1) !important;
+    }
+
+    .bg-light-orange {
+        background-color: rgba(255, 159, 67, 0.1) !important;
+    }
+
+    .text-pink {
+        color: #ff6b9f !important;
+    }
+
+    .text-orange {
+        color: #ff9f43 !important;
+    }
+
+    .card {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid #f0f0f0;
+    }
+
+    .card-header {
+        background: transparent;
+        border-bottom: 1px solid #f0f0f0;
+    }
 </style>
 
-<?php include "includes/footer.php";?>
+<?php include "includes/footer.php"; ?>
 
 <!-- Add New Client Modal -->
 <div class="modal fade" id="addClientModal" tabindex="-1" aria-hidden="true">
@@ -279,8 +303,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
 
                         <div class="col-md-6">
                             <label class="form-label">Applied Date</label>
-                            <input type="date" name="applied_date" class="form-control"
-                                   value="<?= date('Y-m-d') ?>">
+                            <input type="date" name="applied_date" class="form-control" value="<?= date('Y-m-d') ?>">
                         </div>
 
                         <div class="col-md-6">
@@ -299,8 +322,7 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
 
                 <!-- Footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary"
-                        data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
 
                     <button type="submit" class="btn btn-primary">
                         Save Client
@@ -314,11 +336,11 @@ $expiredRenewals = mysqli_fetch_assoc($expiredRenewalQuery)['expired'];
 
 
 <script>
-document.querySelectorAll('.delete-client-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        if (confirm('Are you sure you want to delete this client?')) {
-            window.location.href = 'php/delete_client.php?id=' + btn.dataset.id+'&route=chaplain-coaching';
-        }
+    document.querySelectorAll('.delete-client-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            if (confirm('Are you sure you want to delete this client?')) {
+                window.location.href = 'php/delete_client.php?id=' + btn.dataset.id + '&route=chaplain-coaching';
+            }
+        });
     });
-});
 </script>
